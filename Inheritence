@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// inheritence
+// multilevel inheritence
 
 class Human{
     //properties
