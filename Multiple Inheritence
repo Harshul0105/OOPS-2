@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+// multiple inheritence
+
+class Human {
+	//properties
+protected:
+	string name;
+};
+
+class person
+{
+    protected:
+    int age;
+};
+
+
+class student: public Human, public person
+{
+	int roll_no;
+	public:
+	student(string n,int a,int r)
+	{
+		name= n;
+		age= a;
+		roll_no=r;
+		
+	}
+	void display()
+	{
+		cout<<name<<" "<<age<<" "<<roll_no<<endl;
+	}
+};
+
+int main() {
+	student obj("Hitesh",21,01);
+	obj.display();
+	return 0;
+}
